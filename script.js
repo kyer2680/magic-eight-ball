@@ -1,4 +1,3 @@
-console.log("hi");
 var userName = 'Kye';
 let randomNumber = Math.round (Math.random() * 10);
  
@@ -29,6 +28,16 @@ else if(randomNumber === 8){
 else if(randomNumber === 9){
     console.log("The magic eightball says its foretold");
 }
-else if(randomNumber === 10){
+else{
     console.log("Its not going to happen")
 }
+
+
+//Check if a question is asked, trim method checks for a b
+let question = document.getElementById('question').value;
+if (question.trim() === ''){
+    alert("Please enter a question.");
+} else{
+    document.getElementById('answer').textContent = answer;
+}
+});
