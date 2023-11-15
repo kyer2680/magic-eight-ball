@@ -33,11 +33,11 @@ document.getElementById('askButton').addEventListener('click', function () {
         console.log(answer);
     }
 
-    let question = document.getElementId('question').value;
+    let question = document.getElementById('question').value;
     if (question.trim() === '') {
         alert("Please enter a question");
     } else {
-        document.getElementId('answer').textContent = answer;
+        document.getElementById('answer').textContent = answer;
     }
 
 });
